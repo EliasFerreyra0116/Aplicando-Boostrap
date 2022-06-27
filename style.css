@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+ /* Fondo*/
+ body{
+    background-image: url(multimedia/fotos/body.jpg) ;
+    background-size: cover;
+    }
+    p{color:black;}
+    
+   
+  /*Header*/
+
+    .titulo{
+        text-align: center;
+        padding: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        color: #A6418B;
+    }
+
+    .productos{
+       display: flex;
+       justify-content: center;
+       align-items: center; 
+    }
+    .productos{
+        height: 60vh;
+        background: url(multimedia/fotos/imagen3.jpg);
+        background-size: cover;
+    }
+
+
+     /*seccion inicio*/
+ .productos img{
+    height: 100vh;
+    padding: 10vh;
+    width: 100%;
+    margin: 0;
+
+ }
+ .productos p{
+    max-width: 100vh;
+ }
+
+  /*seccion fotos*/
+  .galeria{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap:10px;
+    padding: 40px 0;
+    overflow: hidden;
+    
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.galeria a:hover img{
+    filter:blur(2px);
+    transform: rotate(10deg) scale(1.3);
+} 
+
+
+/*seccion servicios*/
+
+.row-service{
+    grid-gap:10px;
+}
+.col-service{
+    position:relative;
+    width: 100px;
+    padding: 40px 20px 40px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .5);
+
+}
+
+     /* seccion nosotros*/
+
+.col-nos img{
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .5);
+    width: 80%;
+    display: flex;
+}
+
+
+    /*Seccion contacto*/
+    
+.mapa{margin-left:5vh;}
+.contacto{
+    margin-top: 1vh;}
+.inf-cont{
+    text-align: center;
+}
+
+
+
+     /*footer */
+ .footer{
+    background-color: #d3d0d2;
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: row;    
+    justify-content: space-between;
+    margin-top: 100px;   
+} 
+.footer p{ color: black;}
